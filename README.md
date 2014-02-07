@@ -28,14 +28,14 @@ Remember `sudo` if you're not installing into a virtualenv owned by you.
       -h --help           Show this screen.
       --version           Show version.
       --instance-id=<id>  The instance id to use
-      --role=<role>       IAM role use to get temporary access keys
+      --role=<role>       IAM role use to get temporary access keys.
 
 ## Examples
 
 De-register an instance from the ELB named `my-elb`, assuming the instance has role `myrole`. Run the following *on the instance*:
 
-    elb-dance deregister my-elb --role=myrole
+    elb-dance deregister my-elb1 --role=web-server
 
 Register an instance and return when it's returned to service.
 
-    elb-dance register my-elb --role=myrole
+    elb-dance register my-elb1 --role=web-server
