@@ -35,6 +35,7 @@ def elb_connection(role):
 def deregister(elb_name, role=None, instance_id=None):
     instance_id = instance_id or current_instance()
     elb_connection(role).deregister_instances(elb_name, instance_id)
+    print("Deregistered '{}'".format(instance_id))
 
 
 def register_and_in_service(elb_name, role=None, instance_id=None):
