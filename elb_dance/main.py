@@ -1,4 +1,3 @@
-import socket
 import time
 import boto.ec2.elb
 import boto.utils
