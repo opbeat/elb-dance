@@ -32,10 +32,18 @@ Remember `sudo` if you're not installing into a virtualenv owned by you.
 
 ## Examples
 
+The following examples assume that IAM instance roles are set up to allow you to access the load balancer.
+
+
 De-register an instance from the ELB named `my-elb`, assuming the instance has role `myrole`. Run the following *on the instance*:
 
-    elb-dance deregister my-elb1 --role=web-server
+    elb-dance deregister my-elb1
 
 Register an instance and return when it's returned to service.
 
-    elb-dance register my-elb1 --role=web-server
+    elb-dance register my-elb1
+
+If you need to set credentials manually, it can be done through the environement
+variables `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`.
+
+Other authentication options are detailed here: https://code.google.com/p/boto/wiki/BotoConfig
