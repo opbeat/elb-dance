@@ -47,3 +47,12 @@ If you need to set credentials manually, it can be done through the environement
 variables `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`.
 
 Other authentication options are detailed here: https://code.google.com/p/boto/wiki/BotoConfig
+
+## Thanks
+
+* [docopt](https://github.com/docopt/docopt) by Vladimir Keleshev et al. which we've embedded into elb-dance
+* [boto](https://github.com/boto/boto)
+
+## License
+
+MIT
