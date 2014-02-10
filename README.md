@@ -7,9 +7,9 @@ It can register and block until the instance is back "In Service".
 
 ## Install
 
-As long as elb-dance is not on pypi. You need to do:
+elb-dance can be installed from pypi:
 
-    pip install https://github.com/opbeat/elb-dance.git
+    pip install elb-dance
 
 
 Remember `sudo` if you're not installing into a virtualenv owned by you.
